@@ -1,0 +1,32 @@
+.btn-green {padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-scary {
+    text-decoration: none;
+    color: red;
+    border: solid 3px;
+    padding: 8px 24px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn-not-scary {
+    text-decoration: none;
+    color: red;
+    border: solid 3px;
+    padding: 8px 24px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.btn-very-scary {
+    text-decoration: none;
+    color: red;
+    border: solid 3px;
+    padding: 8px 24px;
+    background-color: white;
+    border-radius: 20px;
+}

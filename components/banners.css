@@ -1,0 +1,22 @@
+.banner {
+	background-image: url('https://source.unsplash.com/random/800x1200');
+	height: 80vh;
+	background-size: cover;
+}
+
+.banner-bnb {
+	background-image: url('fil.ion.ucl.ac.uk/wp-content/uploads/2019/05/grey-background.jpg');
+	height: 80vh;
+	background-size: cover;
+}
+
+.banner-product {
+	background-image: url('bartender.jpg');
+	height: 80vh;
+	background-size: cover;
+}
+
+.banner-library {
+    background-image: ;
+    height: ;
+    background-size: cover}

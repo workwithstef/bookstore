@@ -1,0 +1,28 @@
+/*IMPORT FONTS AND EXTERNAL*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:ital,wght@0,400;0,600;1,400&display=swap');
+
+
+/*IMPORT ALL INDIVIDUAL COMPONENTS*/
+@import url('../components/buttons.css');
+@import url('../components/banners.css');
+
+/*SET CSS STYLE FOR GENERAL PAGES*/
+.container {
+	width: 800px;
+	margin: 20px auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+body, p {
+	font-family: 'Raleway', sans-serif;
+	color: rgba(30, 30, 30, 0.9);
+	/*size: 14px*/
+}
+
+h1 {
+	font-family: 'Poppins';
+	color: rgba(30, 30, 30, 0.9);
+}
