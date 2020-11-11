@@ -7,14 +7,22 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="banner-library">
-        <div class= "heading-tagline">
-        <h1>Welcome to Stefan's Books</h1>
-        <h2>Please explore functionality via the links below</h2>
-        </div>
-        <a href="{{ url_for('library') }}" class="btn-green">Library</a>
-        <a href="{{ url_for('add_book') }}" class="btn-green">Add Book</a>
+    <div class="banner-heading">
+    <h1>Stefan's Books</h1>
     </div>
+        <div class="banner-backdrop">
+
+            <div class="text-center">
+                <h2>Welcome to Stefan's Books</h2>
+                <h3>Please explore functionality via the links below</h3>
+            </div>
+
+            <div class="container-flex-links">
+                <a href="{{ url_for('library') }}" class="btn-black">Library</a>
+                <a href="{{ url_for('add_book') }}" class="btn-black">Add Book</a>
+            </div>
+
+        </div>
 
 
 </body>

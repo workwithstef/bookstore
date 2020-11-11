@@ -6,21 +6,6 @@ app = Flask(__name__)
 book_db = MYSQLConnect("books")
 
 
-all_books = book_db.sql_query("select * from library")
-
-# library = book_db.cur
-
-lib = []
-for i in book_db.cur:
-
-    books = {
-       'title': i[1],
-       'author': i[2],
-       'year': i[3]
-    }
-
-    lib.append(books)
-
 
 @app.route('/')
 def homepage():
@@ -28,6 +13,17 @@ def homepage():
 
 @app.route('/library')
 def library():
+    book_db.sql_query("select * from library")
+
+    lib = []
+    for i in book_db.cur:
+        books = {
+            'title': i[1],
+            'author': i[2],
+            'year': i[3]
+        }
+
+        lib.append(books)
     return render_template('library.html', lib=lib)
 
 @app.route('/add-book', methods=['POST', 'GET'])

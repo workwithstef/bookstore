@@ -7,9 +7,42 @@
     <title>Library</title>
 </head>
 <body>
+    <div class="banner-heading">
+    <h1>Stefan's Books</h1>
+    </div>
+    <div class="banner-backdrop">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <h4>Title</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Author</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Published Year</h4>
+            </div>
+          </div>
+        </div>
     {% for book in lib %}
-        <h1>{{ book.title }}</h1>
-        <p> By {{ book.author }} in {{ book.year }}</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                <p>{{ book.title }}</p>
+            </div>
+            <div class="col-sm">
+                <p>{{ book.author }}</p>
+            </div>
+            <div class="col-sm">
+                <p>{{ book.year }}</p>
+            </div>
+          </div>
+        </div>
+
+<!--        <h2>{{ book.title }}</h2>-->
+<!--        <p> By {{ book.author }} in {{ book.year }}</p>-->
     {% endfor %}
+
+    </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
-.btn-green {padding: 10px 20px;
-    background-color: green;
+.btn-black {padding: 50px 35px;
+    background-color: rgba(30, 30, 30, 0.9);
     color: white;
     border-radius: 20px;
 }

@@ -7,9 +7,12 @@
 @import url('../components/banners.css');
 
 /*SET CSS STYLE FOR GENERAL PAGES*/
-.container {
-	width: 800px;
-	margin: 20px auto;
+.container-flex-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+	width: 300px;
+	margin: 100px auto;
 }
 
 .text-center {
@@ -24,5 +27,5 @@ body, p {
 
 h1 {
 	font-family: 'Poppins';
-	color: rgba(30, 30, 30, 0.9);
+	color: rgba(255, 255, 255);
 }
