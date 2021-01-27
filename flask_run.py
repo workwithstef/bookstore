@@ -34,11 +34,7 @@ def add_book():
         book_author = (request.form['book-author'])
         pub_year = (request.form['pub-year'])
 
-        book_db.sql_query(f"""INSERT INTO library
-                    (book_title, book_author, year_published)
-                    VALUES
-                    ("{book_title}", "{book_author}", "{pub_year}")
-                    """)
+        book_db.sql_query(f"INSERT INTO library (book_title, book_author, year_published) VALUES (\"{book_title}\", \"{book_author}\", \"{pub_year}\")")
         book_db.conn.commit()  # must use .commit() to commit changes to mysql database
         return redirect(url_for("added"))
     else:
@@ -49,25 +45,6 @@ def add_book():
 def added():
     return f"<h1>Book added to Library!</h1>"
 
-# @app.route('/handle_data', methods=['POST'])
-# # I want to collect add_book user input data and update the library page
-# def handle_data():
-#     book_title = (request.form['book-title'])
-#     book_author = (request.form['book-author'])
-#     pub_year = (request.form['pub-year'])
-#
-#     new_book = book_db.sql_query(f"""INSERT INTO library
-#                     (book_title, book_author, year_published)
-#                     VALUES
-#                     ("{book_title}", "{book_author}", "{pub_year}")
-#                     """)
-#
-#     book_db.conn.commit()  # must use .commit() to commit changes to mysql database
-#
-#     return
 
-
-# meaning this condition is only true if you run this script directly.
-# app will run in debug mode, meaning changes to the script will seamlessly reflect on the web app
 if __name__ == '__main__':
     app.run(debug=True)
