@@ -34,7 +34,9 @@ def add_book():
         book_author = (request.form['book-author'])
         pub_year = (request.form['pub-year'])
 
-        book_db.sql_query(f"INSERT INTO library (book_title, book_author, year_published) VALUES (\"{book_title}\", \"{book_author}\", \"{pub_year}\")")
+        book_db.sql_query("""INSERT INTO library (book_title, book_author, year_published) 
+                            VALUES ("{title}", "{author}", "{year}")
+                            """.format(title=book_title, author=book_author, year=pub_year))
         book_db.conn.commit()  # must use .commit() to commit changes to mysql database
         return redirect(url_for("added"))
     else:
