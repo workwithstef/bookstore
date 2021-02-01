@@ -45,7 +45,7 @@ def add_book():
 
 @app.route("/book-added")
 def added():
-    return f"<h1>Book added to Library!</h1>"
+    return "<h1>Book added to Library!</h1>"
 
 
 if __name__ == '__main__':
