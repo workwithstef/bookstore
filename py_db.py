@@ -1,9 +1,9 @@
 import mysql.connector
-
+from shhh.py import *
 
 class MYSQLConnect:
 
-    def __init__(self, database, host="localhost", user="root", passwd="password"):
+    def __init__(self, database, host="localhost", user="root", passwd="MY_SQL"):
         self.host = host
         self.user = user
         self.passwd = passwd
