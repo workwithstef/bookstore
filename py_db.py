@@ -1,5 +1,5 @@
 import mysql.connector
-from shhh.py import *
+from shhh import *
 
 class MYSQLConnect:
 
